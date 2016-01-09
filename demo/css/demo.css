@@ -1,0 +1,31 @@
+
+#header .nav-search {
+    /* remove float  */
+    margin-top: 5px;
+    margin-left: 5rem;
+    min-height: 20px;
+    min-width: 20px;
+    max-height: 20px;
+    max-width: 20px;
+}
+
+
+.nav-search * {
+    transition: none;
+}
+
+body.search-open .icon-search.open {
+
+    /* remove float right */
+    margin-top: 5px;
+    margin-left: 5rem;
+    width: 54px;
+    height: 40px;
+    padding: -67px;
+    position: relative;
+    top: 114px;
+}
+
+.search-box > div {
+    background: #95C8ED;
+}

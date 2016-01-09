@@ -1,0 +1,94 @@
+
+.search-box {
+    margin-left: -25px;
+    margin-right: -25px;
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    overflow-y: hidden;
+    max-height: 121px; }
+.search-box > div {
+    min-height: 121px;
+    background: #ccc;
+    border: none;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+.search-box .search-input {
+    width: auto;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    height: 121px;
+    font-weight: 400;
+    box-shadow: none; }
+.search-box .search-input, .search-box .search-input:focus {
+    background: none;
+    border: none;
+    outline: 0px solid transparent; }
+.search-box.closed,
+.search-box.closed input {
+    max-height: 0; }
+.search-box .search-mimic {
+    opacity: 1;
+    position: absolute;
+    top: 120px;
+    margin: 0 auto;
+    text-align: center;
+    left: 0;
+    right: 0;
+    font-size: 30px;
+    color: transparent; }
+.search-box .search-mimic span:before {
+    content: '';
+    background-image: url("icon-search-24.png");
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    opacity: 1;
+    margin-left: -2.5rem;
+    margin-top: -0.1rem;
+    transition: none; }
+.search-box.closed .search-mimic {
+    opacity: 0;
+    transition: none; }
+
+.nav-search * {
+    transition: none; }
+
+body.search-open .search-box {
+    border-bottom: 8px solid #fff; }
+
+body.search-open .icon-search.open {
+    background-color: rgba(255, 255, 255, 0.15);
+    background-image: none;
+}
+body.search-open .icon-search.open:after {
+    content: "";
+    background-image: url("icon-x-20.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-position: center; }
+
+
+
+
+.icon-search {
+    width: 17px;
+    min-height: 17px;
+    background-image: url("icon-search-24.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block; }

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../dist/jquery.searchdrawer.css">
+    <link rel="stylesheet" href="css/demo.css">
+</head>
+<body>
+<header id="header" class="row margin">
+    <div class="large-12 columns">
+        <div class="nav-search"><i class="icon-search"></i></div>
+    </div>
+</header>
+
+<div class="search-box closed">
+    <div><input type="text" class="search-input">
+        <div class="search-mimic"><span></span></div>
+    </div>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="../dist/jquery.searchdrawer.js"></script>
+<script>
+    $('.search-box').flyDrawer();
+</script>
+</body>
+</html>
