@@ -1,0 +1,22 @@
+{
+    "name": "jquery.flyDrawer",
+    "version": "0.0.1",
+    "main": "dist/jquery.searchdrawer.js",
+    "ignore": [
+        "source",
+        "spec",
+        ".bowerrc",
+        ".gitignore",
+        ".jshintignore",
+        ".jshintrc",
+        "bower.json",
+        "gruntfile.js",
+        "package.json",
+        "README.md",
+        "demo",
+        "node_modules"
+    ],
+        "dependencies": {
+            "jquery": ">=1.10.2"
+    }
+}

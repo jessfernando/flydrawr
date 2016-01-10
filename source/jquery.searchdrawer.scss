@@ -1,0 +1,120 @@
+.flydrawr-search-box,
+.flydrawr-search-box input {
+    max-height: 0; }
+
+.flydrawr-search-box {
+    margin-left: -25px;
+    margin-right: -25px;
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    overflow-y: hidden;
+
+    & > div {
+        min-height: 121px;
+        background: #ccc;
+        border: none;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .flydrawr-search-input {
+        width: auto;
+        text-align: center;
+        color: #fff;
+        font-size: 30px;
+        font-weight: 400;
+        box-shadow: none;
+        width:100%;
+
+        &,
+        &:focus{
+            background: none;
+            border: none;
+            outline: 0px solid transparent;
+        }
+    }
+
+}
+
+.flydrawr-search-box,
+.flydrawr-search-box input {
+    max-height: 0; }
+
+.flydrawr-search-box .flydrawr-search-mimic {
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+    left: 0;
+    right: 0;
+    font-size: 30px;
+    color: transparent;
+    opacity: 0;
+}
+
+.flydrawr-search-box .flydrawr-search-mimic span:before {
+    content: 'search';
+    position: absolute;
+    opacity: 1;
+    margin-left: -2.5rem;
+    margin-top: -0.1rem;
+    transition: none;
+
+    min-width:20px;
+    min-height:20px;
+}
+
+
+.nav-search * {
+    transition: none; }
+
+body[class^="flydrawr-open-"]{
+    .icon-search {
+        background-color: rgba(255, 255, 255, 0.15);
+        background-image: none;
+        z-index: 3;
+
+        &:after {
+            content: '✖'; /* UTF-8 symbol */
+            color: #fff;
+            font: 30px/100% arial, sans-serif;
+            position: absolute;
+            text-decoration: none;
+            z-index: 0;
+
+            color: #000;
+            font: 30px/100% arial, sans-serif;
+            /* position: absolute; */
+            /* right: 5px; */
+            text-decoration: none;
+            /* top: 109px; */
+            top: 0;
+            z-index: 0;
+            /* background-color: rgba(255,255,255,0.35); */
+            text-align: center;
+            padding: 0.1rem;
+            font-size: 21px;
+        }
+    }
+
+    .flydrawr-search-mimic {
+        opacity: 1;
+        transition: none;
+    }
+
+    .flydrawr-search-box,
+    .flydrawr-search-box input  {
+        z-index: 2;
+        min-height: 121px;
+        height: 121px;
+    }
+
+}
+

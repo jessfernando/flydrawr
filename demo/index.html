@@ -8,21 +8,48 @@
 </head>
 <body>
 <header id="header" class="row margin">
-    <div class="large-12 columns">
-        <div class="nav-search"><i class="icon-search"></i></div>
-    </div>
+    <div class="nav-search"><a data-flydrawr-id="fly-search" class="icon-search"></a></div>
 </header>
 
-<div class="search-box closed">
-    <div><input type="text" class="search-input">
-        <div class="search-mimic"><span></span></div>
-    </div>
-</div>
+<div id="fly-search" data-flydrawr></div>
 
 <script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="../dist/jquery.searchdrawer.js"></script>
+<script src="../source/jquery.searchdrawer.js"></script>
 <script>
-    $('.search-box').flyDrawer();
+    $('#fly-search').flyDrawer();
 </script>
 </body>
 </html>
+
+<!--
+        if(search.$el.body.hasClass('search-results')){
+            this.blockToggle = true;
+            return;
+        }
+
+        // todo: make unecessary
+    function onNavClick(e){
+        console.log("click:nav");
+        e.stopPropagation();
+    }
+
+
+        //$('nav').on('click', onNavClick);
+
+
+        body.search-open .icon-search:after {
+    content: "";
+    background-image: url("icon-x-20.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+--->

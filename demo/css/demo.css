@@ -1,3 +1,6 @@
+body{
+    margin:0;padding:0;
+}
 
 #header .nav-search {
     /* remove float  */
@@ -29,3 +32,32 @@ body.search-open .icon-search.open {
 .search-box > div {
     background: #95C8ED;
 }
+
+
+.icon-search {
+    win-width: 20px;
+    min-height: 20px;
+    background-image: url("../icon-search-24.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    color:#fff;
+}
+
+
+.search-box .search-mimic {
+}
+
+
+.flydrawr-search-box .flydrawr-search-mimic {
+
+    top: 82px;
+}
+.flydrawr-search-box .flydrawr-search-mimic span:before {
+    content: '';
+    background-image: url("../icon-search-24.png");
+}
+
+
+.flydrawr-search-box {
+    border-bottom: 8px solid #fff; }
